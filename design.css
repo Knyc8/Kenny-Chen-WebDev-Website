@@ -1,0 +1,17 @@
+body {
+    color: salmon;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
