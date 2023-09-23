@@ -8,7 +8,7 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Images/techbackground.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/rainyday.jpg');
     background-size: cover;
     background-position: center;
     padding-left: 8%;
@@ -18,11 +18,12 @@
 
 .textRow {
   display: flex;
-  height: 88%;
+  height: 100%;
   align-items: center;
 }
 
 .textCol {
+  margin-top: 100;
   flex-basis: 50%;
 }
 
@@ -38,14 +39,27 @@ p {
 }
 
 .pageThumbNail {
-  width: 500px;
+  width: 600px;
   height: 215px;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 30px 50px;
   box-sizing: border-box;
   cursor: pointer;
   margin: 15px;
-  background-image: url(Images/snickles.jpg);
+  background-image: url(Images/raincard.png);
   background-position: center;
   background-size: cover;
+  transition: transform 0.5s;
+  opacity: .85;
+}
+
+.pageThumbNail .pageName {
+  font-size: 30px;
+  align-self: center;
+}
+
+.pageThumbNail:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px lightblue;
+  opacity: 1;
 }
