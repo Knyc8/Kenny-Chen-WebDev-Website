@@ -1,76 +1,51 @@
-body {
-    background: lightgray;
-    color: black;
-    font-size: x-large;
-    justify-content: center;
-    align-items: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
 }
 
-
-h2 {
-    text-decoration: underline;
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Images/techbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 
-
-a {
-    color: steelblue;
-    text-decoration: none;
+.textRow {
+  display: flex;
+  height: 88%;
+  align-items: center;
 }
 
-
-header {
-    background: lightslategrey;
-    height: 150px;
-    text-align: center;
-    line-height: 60px;
+.textCol {
+  flex-basis: 50%;
 }
 
-
-.dropdown {
-    display: inline-block;
-    position: relative - 10px;
+h1 {
+  color: white;
+  font-size: 100px;
 }
 
+p {
+  columns: white;
+  font: 11px;
+  line-height: 15px;
+}
 
-button{
-    border:none;
-    border-radius:5px;
-    padding:15px 30px;
-    font-size:18px;
-    cursor:pointer;
-  }
-
-
-  button:hover{
-    background-color:#ddd;
-  }
-
-
-.options {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  background-color:#fff;
-  border-radius:5px;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
- 
-  .dropdown:hover .options {
-    display: block;
-  }
-
-
-  .options a {
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-    padding: 20px 40px;
-  }
-
-
-  .dropdown:hover a:hover {
-    background: aliceblue;
-    border-radius: 10px;
-  }
+.pageThumbNail {
+  width: 500px;
+  height: 215px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 15px;
+  background-image: url(Images/snickles.jpg);
+  background-position: center;
+  background-size: cover;
+}
