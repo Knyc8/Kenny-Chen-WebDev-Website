@@ -27,6 +27,12 @@
   flex-basis: 50%;
 }
 
+img {
+  padding-top: 50px;
+  width: 400px;
+  height: 400px;
+}
+
 .clickThumbnail li {
   list-style: none;
   width: 600px;
