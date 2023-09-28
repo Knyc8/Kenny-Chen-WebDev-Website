@@ -17,7 +17,27 @@
     box-sizing: border-box;
 }
 
-.rainbow_text_animated:hover {
+.rainbow_text_animated:hover h1{
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  cursor: default;
+}
+
+.rainbow_text_animated:hover sup{
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  cursor: default;
+}
+
+.rainbow_text_animated:hover p{
   background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -116,6 +136,7 @@ p {
   background-position: center;
   padding-left: 8%;
   padding-right: 8%;
+  padding-bottom: 4%;
   box-sizing: border-box;
 }
 
@@ -159,7 +180,6 @@ table {
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
   font-size: 0.8rem;
-  padding-bottom: 100px;
 }
 
 td, th {
@@ -187,6 +207,6 @@ caption {
   padding: 10px;
 }
 
-.bgap {
+/* .bgap {
   padding-bottom: 25px;
-}
+} */
