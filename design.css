@@ -17,6 +17,16 @@
     box-sizing: border-box;
 }
 
+.rainbow_text_animated:hover {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  cursor: default;
+}
+
 .rainbow_text_animated:hover h1{
   background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
@@ -75,7 +85,7 @@ sup {
 
 img {
   display: block;
-  padding-top: 50px;
+  padding-top: 25px;
   width: 50%;
 }
 
@@ -179,7 +189,7 @@ table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 td, th {
@@ -188,7 +198,7 @@ td, th {
 }
 
 th {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.80);
 }
 
 td {
@@ -196,17 +206,13 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 tr:nth-child(odd) td {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 caption {
   padding: 10px;
 }
-
-/* .bgap {
-  padding-bottom: 25px;
-} */
