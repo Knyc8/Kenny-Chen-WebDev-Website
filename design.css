@@ -1,3 +1,4 @@
+/***** All pages code *****/
 *{
     margin: 0;
     padding: 0;
@@ -16,10 +17,35 @@
     box-sizing: border-box;
 }
 
+.rainbow_text_animated:hover {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  cursor: default;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+/***** Index.html code *****/
 .textRow {
   display: flex;
   height: 100%;
   align-items: center;
+}
+
+sup {
+  font-size: 25px;
 }
 
 .textCol {
@@ -28,9 +54,9 @@
 }
 
 img {
+  display: block;
   padding-top: 50px;
-  width: 400px;
-  height: 400px;
+  width: 50%;
 }
 
 .clickThumbnail li {
@@ -82,24 +108,15 @@ p {
   line-height: 15px;
 }
 
-.rainbow_text_animated:hover {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 6s ease-in-out infinite;
-  background-size: 400% 100%;
-  cursor: default;
-}
-
-@keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
-  }
-
-  50% {
-      background-position: 100% 0;
-  }
+/***** Subpages Code *****/
+.background {
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Images/rainyday.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
 }
 
 .option {
@@ -126,12 +143,46 @@ p {
   }
 }
 
-
+/***** favorites.html Code *****/
 ul {
   padding-top: 10px;
 }
 
 p {
-  padding-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
+/***** spots.html Code *****/
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  padding-bottom: 100px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+caption {
+  padding: 10px;
+}
