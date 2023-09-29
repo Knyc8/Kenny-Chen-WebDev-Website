@@ -179,9 +179,18 @@ ul {
   padding-top: 10px;
 }
 
+li {
+  font-size: 25px;
+}
+
 p {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+/***** skills.html Code *****/
+form {
+  font-size: 25px;
 }
 
 /***** spots.html Code *****/
