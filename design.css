@@ -83,10 +83,11 @@ sup {
   flex-basis: 50%;
 }
 
-img {
+.gif {
   display: block;
   padding-top: 25px;
   width: 50%;
+  height: 50%;
 }
 
 .clickThumbnail li {
@@ -186,6 +187,15 @@ li {
 p {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  -webkit-filter: drop-shadow(12px 12px 7px black);
+   filter: drop-shadow(10px 10px 7px black);
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 /***** skills.html Code *****/
