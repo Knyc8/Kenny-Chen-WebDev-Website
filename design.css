@@ -198,6 +198,10 @@ img {
    padding-bottom: 10px;
 }
 
+.otherimg {
+  width: 130px;
+}
+
 /***** skills.html Code *****/
 form {
   font-size: 25px;
